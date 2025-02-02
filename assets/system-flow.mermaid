@@ -1,0 +1,43 @@
+graph TB
+    subgraph "Impressionist Profile Generation Process"
+        A[Input: Personal Chat History] --> B[LLM Analysis]
+        C[Person Name] --> B
+        B --> D[Extract Personality Traits]
+        B --> E[Extract Communication Style]
+        D --> F[Generate Profile]
+        E --> F
+        F --> G[(Database)]
+        F --> H[Return Profile ID]
+    end
+    subgraph "LightRAG Text Indexing Process"
+        S[Input Text] --> T[Text Preprocessing]
+        T --> U[D: Deduplication]
+        T --> V[P: LLM Profiling]
+        T --> W[R: Entity & Relation Extraction]
+        U --> X[Index Graph]
+        V --> X
+        W --> X
+        X --> Y[RAG System]
+    end
+    subgraph "Response Generation Process"
+        I[New Message] --> J[Get Conversation History]
+        K[Person Name] --> L[Fetch Impressionist Profile]
+        G --> L
+        J --> M[Generation Prompt before RAG]
+        L --> M
+        M --> N[RAG System]
+        Y --> N
+        N --> O[Fetch Relevant Facts]
+        M --> Q[Generation Prompt after RAG]
+        O --> Q
+        Q --> P[Response Generation]
+        P --> R[Return Response]
+    end
+    classDef process fill:#e1bee7,stroke:#333,stroke-width:2px,color:#000
+    classDef storage fill:#bbdefb,stroke:#333,stroke-width:2px,color:#000
+    classDef input fill:#c8e6c9,stroke:#333,stroke-width:2px,color:#000
+    classDef output fill:#ffcdd2,stroke:#333,stroke-width:2px,color:#000
+    class B,F,M,N,P,Q,T,U,V,W,X,Y process
+    class G storage
+    class A,C,I,K,S input
+    class H,R output

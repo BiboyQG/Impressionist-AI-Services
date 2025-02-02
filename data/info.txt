@@ -1,0 +1,166 @@
+# Academic and Professional Biography of Banghao Chi
+
+## Educational Background
+
+Banghao Chi is currently pursuing his Bachelor of Science in Mathematics with a concentration in Data Optimization at the University of Illinois Urbana-Champaign (UIUC). His academic journey began at Xi'an Jiaotong Liverpool University (XJTLU) in Suzhou, China, where he completed the first two years of his undergraduate studies in Computer Science from Fall 2021 to Spring 2023, maintaining an exceptional GPA of 3.92/4.0. He then transferred to UIUC in Fall 2023, where he continues to demonstrate academic excellence with a GPA of 3.79/4.0.
+
+His coursework at both institutions has provided him with a strong foundation in both theoretical and applied aspects of computer science and mathematics. At UIUC, he has completed advanced courses in Artificial Intelligence, Internet of Things, Numerical Methods, System Programming, Computer Architecture, and Data Structures. During his time at XJTLU, he mastered fundamental concepts through courses in Database Systems, Algorithms, Statistics and Probability, Calculus, and Linear Algebra.
+
+## Research Publications and Academic Contributions
+
+Banghao's academic career is marked by significant research contributions in various areas of computer science and artificial intelligence. His research work has led to several notable publications:
+
+1. His work on efficient and accurate training-free quantization for point cloud 3D object detection models, titled "Q-LiDAR," has been submitted to the prestigious Conference on Computer Vision and Pattern Recognition (CVPR) 2024. This research, conducted in collaboration with Hongbo Zheng and Minjia Zhang, represents a significant advancement in the field of 3D object detection.
+
+2. He contributed to the development of "LLMarking," an automatic short-answer grading system based on large language models, which has been submitted to the 15th Symposium on Educational Advances in Artificial Intelligence (EAAI) 2024.
+
+3. His early research work on deep learning-based object detection was published at the International Conference on Applied Physics and Computing (ICAPC) in 2022.
+
+## Research Experience
+
+### Dynamic and Static Precision Quantization Research
+At UIUC, under the guidance of Minjia Zhang, Banghao has been working on advancing high-efficiency 3D object detection since March 2024. His contributions include:
+
+- Development of dynamic and static post-training quantization techniques that achieved a 35% reduction in inference time and computational complexity while maintaining 99% accuracy
+- Implementation of progressive quantization methods that maintain 16-bit activations while strategically quantizing other operators
+- Conducting detailed sensitivity analysis to identify efficiency-critical variables
+- Application of SmoothQuant techniques to address extreme outlier issues in direct PTQ
+
+### National Center for Supercomputing Applications (NCSA)
+As a Research Intern at NCSA since August 2024, Banghao has been working under Kevin Chang on:
+
+- Developing a hierarchical framework that mirrors human information retrieval processes
+- Integrating Finite State Machines with Large Language Models to achieve structured outputs
+- Conducting extensive model testing and evaluation across 41 different LLMs
+- Implementing sophisticated prompts for sequential steps of understanding and concept extraction
+
+### LLMarking System Development
+At XJTLU, from March to September 2024, Banghao worked on an innovative auto-marking system under the guidance of Xiaohui Zhu. Key achievements include:
+
+- Creating a streamlined Automatic Short Answer Grading pipeline using Large Language Models
+- Achieving high throughput through PagedAttention integration
+- Obtaining impressive F1 scores of 90.5% and 86.1% on computer science and finance datasets
+- Developing a dynamic system for iterative prompt optimization
+
+## Technical Projects
+
+### IoT-Enabled Intelligent Self-Driving Car Prototype
+From November 2023 to March 2024 at UIUC, Banghao developed a comprehensive self-driving car prototype that showcased his abilities in hardware-software integration. The project involved:
+
+- Integration of Raspberry Pi and ultrasonic sensors for intelligent control and spatial awareness
+- Implementation of real-time image processing using OpenCV and TensorFlow
+- Development of a modified A* pathfinding algorithm for precise route planning
+- Achievement of full self-driving functionality in controlled environments
+
+### IoT-Based Home Security Camera
+Between August and October 2023, Banghao developed a sophisticated security system that incorporated:
+
+- Advanced facial recognition using Histogram of Oriented Gradients
+- Multi-layered security defense implementation using SpringBoot and JWT verification
+- Integration of SSL encryption and CDN for enhanced security and performance
+
+### Real-time Object Recognition in Chess
+During June-July 2023 at XJTLU, Banghao worked on an innovative chess recognition system featuring:
+
+- Dynamic recognition of chess configurations from video footage
+- Deployment of yolov5-lite model on edge computing devices
+- Achievement of 97% efficiency improvement through optimization techniques
+
+## Teaching and Academic Service
+
+### Course Assistant for CS 409: The Art of Web Development
+Currently serving as a Course Assistant at UIUC, Banghao has:
+
+- Developed a Late-days interface using Golang and React
+- Created an autonomous grading system for student code evaluation
+- Provided regular assistance through Q&A sessions and office hours
+
+### Teaching Assistant for Calculus
+During his time at XJTLU (Fall 2021 – Summer 2022), Banghao:
+
+- Conducted lectures on fundamental Calculus concepts
+- Created and administered quizzes to assess student understanding
+- Provided individualized support to help students grasp complex mathematical concepts
+
+## Awards and Achievements
+
+Banghao's academic excellence has been recognized through numerous awards:
+
+- University Dean's List (top 20% excellence) at UIUC in 2024
+- University Academic Excellence Award (top 1% excellence) at XJTLU in 2023
+- Summer Undergraduate Research Fellow at XJTLU in 2022
+- University Academic Achievement Award (top 2% excellence) at XJTLU in 2022
+- Second Prize in Asia and Pacific Mathematical Contest in Modeling
+- Second Prize in FLTRP Cup National English Speaking Contest
+
+## Technical Skills and Expertise
+
+Banghao possesses a comprehensive skill set in various programming languages and tools:
+
+### Programming Languages
+- Golang (Chi framework)
+- Python (with expertise in PyTorch, TensorFlow, numpy, pandas, Django, FastAPI)
+- C++
+- Java
+- JavaScript
+- R
+- SQL and NoSQL
+
+### Tools and Technologies
+- ONNX
+- ROS2
+- Kubernetes
+- Docker
+- Nginx
+- Redis
+- RabbitMQ
+- React
+- Spring
+- Unreal Engine
+- bash
+- R Studio
+- LaTeX
+
+## Academic Performance and Course History
+
+At UIUC, Banghao has maintained an impressive academic record, completing challenging courses with excellent grades:
+
+### Fall 2023
+- CS 128: Intro to Computer Science II
+- CS 357: Numerical Methods I (A)
+- CS 409: The Art of Web Programming (A+)
+- MATH 347: Fundamental Mathematics (A)
+- STAT 400: Statistics and Probability I (A+)
+
+### Spring 2024
+- CS 415: Game Development (A)
+- CS 437: Topics in Internet of Things (A+)
+- IS 305: Program for Info Problems II (A)
+- IS 419: Entrepreneurial IT Design (A+)
+- Various physical education courses with perfect grades
+
+## Current Academic Focus
+
+Banghao is currently enrolled in several courses that reflect his diverse interests and commitment to broadening his knowledge base:
+
+- CS 427: Software Engineering I
+- DTX 495: Student-Centered App Design
+- Various cultural and physical education courses including Ice Skating, World Music, and American Culture studies
+
+## Professional Development and Future Goals
+
+Throughout his academic career, Banghao has demonstrated a clear focus on combining theoretical knowledge with practical applications. His research interests span multiple areas of computer science, particularly in:
+
+- Machine Learning and Artificial Intelligence
+- 3D Object Detection and Computer Vision
+- Large Language Models and Natural Language Processing
+- IoT and Embedded Systems
+- Software Engineering and Web Development
+
+His work consistently shows a pattern of innovation and practical application, with a particular emphasis on improving efficiency and accuracy in computational systems. His diverse project portfolio demonstrates his ability to work across different domains of computer science, from low-level system programming to high-level application development.
+
+## Personal Achievements and Impact
+
+Banghao's academic journey is characterized by consistent excellence and meaningful contributions to his field. His work on the Q-LiDAR project represents a significant advancement in 3D object detection efficiency, while his contributions to the LLMarking system demonstrate practical applications of AI in education. These achievements showcase his ability to bridge theoretical concepts with real-world applications, making complex technology more accessible and efficient.
+
+His perfect balance of academic excellence, research contributions, and practical project implementation makes him a promising young researcher and developer in the field of computer science and mathematics. His work continues to push the boundaries of what's possible in areas like quantization techniques, automated assessment systems, and intelligent IoT applications.

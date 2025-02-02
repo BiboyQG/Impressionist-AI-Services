@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;RABBITMQ&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"RabbitMQ is a message broker that Banghao is familiar with, used to facilitate communication between applications."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;ONNX&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"ONNX is an open format for AI models that Banghao is familiar with, allowing interoperability between different machine learning frameworks."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;C++&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"C++ is a programming language that Banghao utilizes for various aspects of software engineering and system programming."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;TENSORFLOW&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"TensorFlow is an open-source machine learning library used by Banghao for real-time image processing in his self-driving car project."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;15TH SYMPOSIUM ON EDUCATIONAL ADVANCES IN ARTIFICIAL INTELLIGENCE (EAAI) 2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"EAAI 2024 is an academic symposium where Banghao's development of the LLMarking grading system has been submitted for presentation."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;HONGBO ZHENG&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Hongbo Zheng is a researcher who collaborated with Banghao Chi on the project "Q-LiDAR," focusing on 3D object detection models for point cloud data."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;3D OBJECT DETECTION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"3D Object Detection is a key area of research and application in computer science that involves identifying objects in three-dimensional space, which Banghao has contributed to significantly."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;BANGHAO&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Banghao is a student recognized for his academic excellence, research contributions, and skills in computer science and mathematics."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;CS 437&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"CS 437 covers topics in the Internet of Things and was completed by Banghao with an A+ grade."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;CS 128&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"CS 128 is an introductory computer science course at UIUC that Banghao completed with excellent grades."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;REACT&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"React is a JavaScript library for building user interfaces that Banghao has experience with in his projects."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;ROS2&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"ROS2 is a set of software libraries and tools for robot programming that Banghao has experience with."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;JAVA&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Java is a programming language that Banghao has learned and applied in his academic projects and coursework."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;OPENCV&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"OpenCV is an open-source computer vision library employed by Banghao for implementing image processing functionality in his projects."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;UIUC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"UIUC, or the University of Illinois Urbana-Champaign, is where Banghao has achieved numerous academic accomplishments including the Dean's List and has taken various courses in computer science."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;INTERNATIONAL CONFERENCE ON APPLIED PHYSICS AND COMPUTING (ICAPC) 2022&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"ICAPC 2022 is an academic conference where Banghao published his early research on deep learning-based object detection."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;MINJIA ZHANG&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Minjia Zhang is a researcher and academic mentor to Banghao Chi, guiding him in advancing high-efficiency 3D object detection techniques."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;Q-LIDAR PROJECT&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The Q-LiDAR project is an initiative that Banghao worked on aimed at improving the efficiency of 3D object detection."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;ARTIFICIAL INTELLIGENCE&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Artificial Intelligence is a fundamental field of study in which Banghao has actively engaged through research and coursework, focusing on technologies that enable machines to perform tasks typically requiring human intelligence."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;IS 305&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"IS 305 is a course on information problem-solving that Banghao excelled in, receiving an A."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;CS 357&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"CS 357 is a course on numerical methods that Banghao successfully completed with a top grade."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;SPRING&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Spring is a framework for building Java applications that Banghao utilizes in his coursework and projects."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;KUBERNETES&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Kubernetes is a container orchestration platform that Banghao uses to manage application deployment in cloud environments."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;JAVASCRIPT&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"JavaScript is a programming language used for web development, which Banghao is proficient in."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;HISTOGRAM OF ORIENTED GRADIENTS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Histogram of Oriented Gradients is a method used in Banghao's security system project to perform advanced facial recognition."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;XJTLU&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"XJTLU, or Xi'an Jiaotong-Liverpool University, is where Banghao received multiple academic excellence awards and is associated with significant part of his academic journey."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;SMOOTHQUANT TECHNIQUES&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"SmoothQuant techniques are methods used in Banghao's research to handle outlier issues in post-training quantization for model efficiency."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;XIAOHUI ZHU&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Xiaohui Zhu is a researcher and mentor to Banghao Chi, overseeing the development of the LLMarking system for automatic grading."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;LLMARKING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"LLMarking refers to the development of an automatic short-answer grading system based on large language models, which Banghao contributed to, indicating his involvement in educational technology advancements."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;LLMARKING SYSTEM&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"The LLMarking system is a project developed by Banghao demonstrating the practical application of AI in educational contexts."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;IS 419&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"IS 419 focuses on entrepreneurial IT design, where Banghao achieved an A+ grade."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;CS 409&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"CS 409 is a course focused on web programming where Banghao achieved an A+ grade."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;UNREAL ENGINE&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Unreal Engine is a game engine used for developing video games and simulations, which Banghao is knowledgeable about."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;DOCKER&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Docker is a tool designed to make it easier to create, deploy, and run applications using containers, which Banghao is skilled in."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;R&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"R is a programming language and environment for statistical computing and graphics, in which Banghao has developed skills."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;LARGE LANGUAGE MODELS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Large Language Models are advanced AI models that Banghao utilized in both his LLMarking system and the auto-marking system project."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;ASIA AND PACIFIC MATHEMATICAL CONTEST IN MODELING&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"An academic competition where Banghao won second prize, showcasing his mathematical skills."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;PAGATTENTION&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"PagedAttention is an innovative approach Banghao implemented to enhance the throughput of the Automatic Short Answer Grading pipeline for large language models."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;3D OBJECT DETECTION MODELS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Point cloud 3D object detection models represent advanced computational methods used for identifying objects in three-dimensional data, a key area of Banghao's research."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;NCSA&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The National Center for Supercomputing Applications (NCSA) is a research organization where Banghao Chi has worked as a Research Intern, focusing on information retrieval processes."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;GOLANG&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Golang is a programming language in which Banghao has expertise, known for its efficiency and performance in software development."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;BANGHAO CHI&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Banghao Chi is a student pursuing a Bachelor of Science in Mathematics with a focus on Data Optimization at the University of Illinois Urbana-Champaign, with a strong background in Computer Science and significant research experience."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;MATH 347&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"MATH 347 is a course on fundamental mathematics with which Banghao excelled, receiving an A."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;BASH&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Bash is a command language interpreter that Banghao uses for scripting and automation tasks in his studies."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;NGINX&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Nginx is a web server software used for handling traffic on web applications that Banghao is knowledgeable about."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;SQL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"SQL is a programming language specifically designed for managing and querying relational databases, which Banghao uses in his studies."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;FLTRP CUP NATIONAL ENGLISH SPEAKING CONTEST&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A national contest in which Banghao achieved second prize, indicating his proficiency in English language skills."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;RASPBERRY PI&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Raspberry Pi is a small and affordable computer used by Banghao in his projects, crucial for hardware-software integration in the self-driving car prototype."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;NATIONAL CENTER FOR SUPERCOMPUTING APPLICATIONS (NCSA)&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The National Center for Supercomputing Applications is a leading research institution focused on high-performance computing, where Banghao contributes to innovative research in information retrieval."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;IOT-ENABLED INTELLIGENT SELF-DRIVING CAR PROTOTYPE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The IoT-Enabled Intelligent Self-Driving Car Prototype is a technical project developed by Banghao at UIUC, showcasing integration of hardware and software for autonomous driving."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;PYTHON&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Python is a widely-used programming language, particularly in machine learning, with which Banghao has extensive knowledge and skills."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The University of Illinois Urbana-Champaign (UIUC) is a prominent educational institution where Banghao Chi is pursuing his degree, noted for its advanced programs in mathematics and computer science."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;STAT 400&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"STAT 400 is a statistics and probability course that Banghao completed with an A+ grade."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;R STUDIO&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"R Studio is an integrated development environment for R that Banghao uses for statistical computing and data analysis."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;REDIS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Redis is an in-memory data structure store used as a database, cache, and message broker, which Banghao has worked with."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;NOSQL&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"NoSQL refers to a variety of data storage technologies that Banghao is knowledgeable about, focusing on non-relational databases."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;CONFERENCE ON COMPUTER VISION AND PATTERN RECOGNITION (CVPR) 2024&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"CVPR 2024 is a prestigious conference where Banghao Chi submitted his research on training-free quantization for 3D object detection."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;TEACHING ASSISTANT FOR CALCULUS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Teaching Assistant for Calculus refers to Banghao's role at Xi'an Jiaotong Liverpool University, where he supported students in understanding mathematical concepts."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;XI'AN JIAOTONG LIVERPOOL UNIVERSITY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Xi'an Jiaotong Liverpool University is an educational institution in Suzhou, China, where Banghao Chi completed the initial years of his undergraduate studies in Computer Science."</data>
+  <data key="d2">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</node>
+<node id="&quot;CS 415&quot;">
+  <data key="d0">"COURSE"</data>
+  <data key="d1">"CS 415 is a game development course at UIUC in which Banghao received an A."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<node id="&quot;LATEX&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"LaTeX is a document preparation system used for high-quality typesetting that Banghao employs in his academic writing."</data>
+  <data key="d2">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</node>
+<edge source="&quot;3D OBJECT DETECTION&quot;" target="&quot;BANGHAO CHI&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Banghao Chi has made significant contributions to the field of 3D object detection through research, showcasing his engagement in this category."|&gt;"research contribution, expertise"</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;BANGHAO&quot;" target="&quot;XJTLU&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Banghao's academic journey at XJTLU is marked by several awards and recognitions, contributing to his overall success."</data>
+  <data key="d5">"academic recognition, educational impact"</data>
+  <data key="d6">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</edge>
+<edge source="&quot;BANGHAO&quot;" target="&quot;UIUC&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao has achieved significant academic recognition at UIUC, reflecting his excellence in studies and various technical skills."</data>
+  <data key="d5">"academic achievement, education"</data>
+  <data key="d6">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</edge>
+<edge source="&quot;BANGHAO&quot;" target="&quot;FLTRP CUP NATIONAL ENGLISH SPEAKING CONTEST&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Banghao's second prize in this contest reflects his proficiency and skill in English speaking."</data>
+  <data key="d5">"competition, language skills"</data>
+  <data key="d6">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</edge>
+<edge source="&quot;BANGHAO&quot;" target="&quot;ASIA AND PACIFIC MATHEMATICAL CONTEST IN MODELING&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Banghao's achievement of second prize in this contest illustrates his strong mathematical abilities."</data>
+  <data key="d5">"competition, mathematical skills"</data>
+  <data key="d6">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</edge>
+<edge source="&quot;BANGHAO&quot;" target="&quot;LLMARKING SYSTEM&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao's work on the LLMarking system showcases his ability to apply AI to improve educational practices."</data>
+  <data key="d5">"innovation, practical application"</data>
+  <data key="d6">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</edge>
+<edge source="&quot;BANGHAO&quot;" target="&quot;Q-LIDAR PROJECT&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao contributed to the Q-LiDAR project, which focuses on advancements in 3D object detection technology."</data>
+  <data key="d5">"research, technology advancement"</data>
+  <data key="d6">chunk-0e34cefcd3393e81bfbe02501fa4c1f8</data>
+</edge>
+<edge source="&quot;ARTIFICIAL INTELLIGENCE&quot;" target="&quot;BANGHAO CHI&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao Chi has actively engaged in the study and application of Artificial Intelligence through his coursework and research projects, highlighting his focus on this domain."|&gt;"academic focus, innovation"</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;LLMARKING&quot;" target="&quot;BANGHAO CHI&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Banghao Chi contributed to the development of the LLMarking system, which is an automatic grading tool utilizing large language models."|&gt;"innovation, educational technology"</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;NCSA&quot;" target="&quot;BANGHAO CHI&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao Chi has worked as a Research Intern at the NCSA, where he has focused on developing information retrieval frameworks."|&gt;"research experience, organizational involvement"</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;BANGHAO CHI&quot;" target="&quot;XI'AN JIAOTONG LIVERPOOL UNIVERSITY&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao Chi completed the first two years of his undergraduate studies in Computer Science at Xi'an Jiaotong Liverpool University, indicating a key part of his academic journey."</data>
+  <data key="d5">"education, academic background"</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;BANGHAO CHI&quot;" target="&quot;UNIVERSITY OF ILLINOIS URBANA-CHAMPAIGN&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Banghao Chi is a student at the University of Illinois Urbana-Champaign, currently pursuing his degree in Mathematics."|&gt;"education, academic involvement"</data>
+  <data key="d5">10</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;BANGHAO CHI&quot;" target="&quot;IOT-ENABLED INTELLIGENT SELF-DRIVING CAR PROTOTYPE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Banghao Chi developed the IoT-enabled prototype as part of his technical projects at UIUC, displaying his skills in self-driving technology."|&gt;"project development, technical skills"</data>
+  <data key="d5">9</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+<edge source="&quot;BANGHAO CHI&quot;" target="&quot;TEACHING ASSISTANT FOR CALCULUS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"As a Teaching Assistant for Calculus, Banghao Chi provided support and conducted lectures, showing his involvement in academic service."|&gt;"teaching experience, academic service"</data>
+  <data key="d5">8</data>
+  <data key="d6">chunk-da2b8e0b70a733451856065f3c722af2</data>
+</edge>
+</graph></graphml>
