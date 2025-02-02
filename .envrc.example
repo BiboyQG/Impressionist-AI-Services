@@ -1,0 +1,7 @@
+export WORKING_DIR=""
+export OPENAI_API_KEY=""
+export MODEL_NAME=""
+
+# Supabase
+export SUPABASE_URL=""
+export SUPABASE_KEY=""

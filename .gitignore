@@ -403,4 +403,3 @@ pyrightconfig.json
 docker-compose-local*
 
 .envrc
-.envrc.example
