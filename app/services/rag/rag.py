@@ -87,7 +87,7 @@ class RAGService:
             self.insert_file(file_path)
 
     def query(
-        self, question: str, mode: str = "hybrid", measure_time: bool = False
+        self, question: str, mode: str = "naive", measure_time: bool = False
     ) -> Union[str, tuple[str, float]]:
         """Query the RAG system with a question.
 
@@ -141,9 +141,6 @@ Only answer starting with <Query> and ends with </Query>
     # Ask general ai model to compose the query
     query = general_ai_model.generate_text([{"role": "user", "content": prompt}])
 
-    logger.info("Query:")
-    logger.info(query)
-
     prettified_query = prettify_query(query)
 
     return prettified_query
@@ -180,7 +177,6 @@ def rag_pipeline(conversation_history: str, name: str) -> str:
         logger.error("WORKING_DIR environment variable is not set")
         return None
 
-    # This will reuse the existing instance if it exists
     rag_service = RAGService(working_dir)
 
     # Generate focused query from conversation history
@@ -192,13 +188,12 @@ def rag_pipeline(conversation_history: str, name: str) -> str:
     answer, time_taken = rag_service.query(focused_query, measure_time=True)
 
     logger.info("-" * 100)
-    logger.info("Hybrid search")
     logger.info(f"Query: {focused_query}")
     logger.info("-" * 100)
     logger.info(answer)
     logger.info(f"Time taken: {time_taken} seconds")
 
-    return answer
+    return None
 
 
 # Example usage
@@ -206,7 +201,7 @@ if __name__ == "__main__":
     # Test the RAG pipeline with a sample conversation
     test_conversation = """
     Alice (user): So, we are going to solve the problem of is it ethical to use AI to copy a digital identity. I think it is not because the digital identity is not a physical object.
-    Banghao Chi (assistant): Well, I think it is ethical to use AI to copy a digital identity, under the case that the person being copied agrees to it.
+    Banghao Chi (you): Well, I think it is ethical to use AI to copy a digital identity, under the case that the person being copied agrees to it.
     Charlie (user): I think you make a good point about consent. But what about the potential misuse of such technology?
     """
 
@@ -216,7 +211,7 @@ if __name__ == "__main__":
     print(test_conversation)
 
     print("\nRetrieving relevant information...")
-    result = rag_pipeline(test_conversation)
+    result = rag_pipeline(test_conversation, "Banghao Chi")
 
     print("\nRetrieved Information:")
     print(result)

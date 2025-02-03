@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 class Message(BaseModel):
     content: str
-    role: str  # "user" or "assistant"
+    role: str  # "user" or "you"
     sender_name: str  # Name of the person who sent the message
     timestamp: Optional[str] = None
 

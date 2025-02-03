@@ -1,3 +1,5 @@
+import time
+
 from app.logger import get_logger
 from app.types import (
     Message,
@@ -101,6 +103,7 @@ def generate_response(
     """
     Main response generation pipeline
     """
+    start_time = time.time()
     logger.info("Starting response generation pipeline")
 
     # Step 1: Get relevant facts using RAG
@@ -151,6 +154,9 @@ When generating the reply message, follow these guidelines:
 6. Your reply message should be mostly a single sentence. If you need to say more, do so in an appropriate manner with two or three sentences at most.
 
 Generate a natural response that matches the profile and return only the reply message, do not include any preamble or explanation. Now, start generating the reply message:"""
+    
+    end_time = time.time()
+    logger.info(f"Time taken to generate prompt: {end_time - start_time} seconds")
 
     try:
         response = general_ai_model.generate_text([{"role": "user", "content": prompt}])
