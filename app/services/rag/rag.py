@@ -190,7 +190,7 @@ def rag_pipeline(conversation_history: str, name: str) -> str:
     logger.info("-" * 100)
     logger.info(f"Query: {focused_query}")
     logger.info("-" * 100)
-    logger.info(answer)
+    logger.info(f"Answer: {answer}")
     logger.info(f"Time taken: {time_taken} seconds")
 
     return None
