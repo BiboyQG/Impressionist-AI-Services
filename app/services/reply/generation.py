@@ -1,5 +1,5 @@
 import time
-
+import random
 from app.logger import get_logger
 from app.types import (
     Message,
@@ -157,6 +157,10 @@ Generate a natural response that matches the profile and return only the reply m
     
     end_time = time.time()
     logger.info(f"Time taken to generate prompt: {end_time - start_time} seconds")
+    if end_time - start_time < 3:
+        sleep_time = random.uniform(2, 4)
+        time.sleep(sleep_time)
+        logger.info(f"Sleeping for {sleep_time} seconds since it's too fast")
 
     try:
         response = general_ai_model.generate_text([{"role": "user", "content": prompt}])
