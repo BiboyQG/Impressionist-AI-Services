@@ -200,9 +200,13 @@ def rag_pipeline(conversation_history: str, name: str) -> str:
 if __name__ == "__main__":
     # Test the RAG pipeline with a sample conversation
     test_conversation = """
-    Alice (user): So, we are going to solve the problem of is it ethical to use AI to copy a digital identity. I think it is not because the digital identity is not a physical object.
-    Banghao Chi (you): Well, I think it is ethical to use AI to copy a digital identity, under the case that the person being copied agrees to it.
-    Charlie (user): I think you make a good point about consent. But what about the potential misuse of such technology?
+Alice (user): Hey everyone, I heard XJTLU has really high academic standards. What's it like studying there?
+Banghao Chi (you): It's quite challenging but rewarding. The joint program with University of Liverpool means we follow UK education standards.
+Charlie (user): @Banghao Chi I'm curious, what's your major there? Computer Science?
+Banghao Chi (you): Yes, I'm studying Computer Science and Technology. The programming courses are particularly intensive.
+David (user): That's cool! How do you manage all the coursework? Must be tough with all those technical subjects.
+Banghao Chi (you): Time management is key. I try to balance my studies with extracurricular activities.
+Charlie (user): What is the GPA of Banghao Chi in XJTLU?
     """
 
     print("\n=== Testing RAG Pipeline ===\n")

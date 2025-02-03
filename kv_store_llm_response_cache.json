@@ -55,6 +55,24 @@
       "embedding_min": null,
       "embedding_max": null,
       "original_prompt": "Ethics of using AI to copy digital identities and potential misuse of technology"
+    },
+    "cbc765878013604416e90d0ffbc726a4": {
+      "return": "### Banghao Chi's GPA at XJTLU\n\nBanghao Chi maintained an exceptional GPA of **3.92/4.0** during his time at Xi'an Jiaotong Liverpool University (XJTLU), where he studied Computer Science from Fall 2021 to Spring 2023.",
+      "cache_type": "query",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "Banghao Chis GPA in XJTLU"
+    },
+    "32315c488f00da3deefc64a2efc93848": {
+      "return": "### Banghao Chi's GPA at XJTLU\n\nBanghao Chi maintained an exceptional GPA of **3.92/4.0** during his undergraduate studies in Computer Science at Xi'an Jiaotong Liverpool University (XJTLU), where he completed the first two years of his academic journey from Fall 2021 to Spring 2023.",
+      "cache_type": "query",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "Banghao Chis GPA at XJTLU"
     }
   },
   "local": {
