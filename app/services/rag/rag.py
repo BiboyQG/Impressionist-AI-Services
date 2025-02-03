@@ -6,6 +6,7 @@ from lightrag import LightRAG, QueryParam
 from lightrag.llm.openai import gpt_4o_mini_complete, openai_embed
 from lightrag.utils import EmbeddingFunc
 from app.logger import get_logger
+from app.models import general_ai_model
 
 logger = get_logger("rag_service")
 
@@ -110,12 +111,67 @@ class RAGService:
         return answer
 
 
-def rag_pipeline(conversation_history: str) -> str:
+def generate_rag_query(
+    conversation_history: str,
+    name: str,
+) -> str:
+    # Compose the query from the conversation history
+    # Ask general ai model to compose the query
+    logger.info("Generating RAG query")
+
+    prompt = f"""
+You are a helpful assistant.
+You are given a conversation history that consist of 
+
+<Messages>
+{conversation_history}
+</Messages>. 
+
+Suppose you are a human named {name}, compose a RAG query to search for relevant knowledge from your personal knowledge base.
+
+For example
+<Query>
+{name}'s music preference
+</Query>
+
+Return only the query, do not include any preamble or explanation.
+Only answer starting with <Query> and ends with </Query>
+"""
+
+    # Ask general ai model to compose the query
+    query = general_ai_model.generate_text([{"role": "user", "content": prompt}])
+
+    logger.info("Query:")
+    logger.info(query)
+
+    prettified_query = prettify_query(query)
+
+    return prettified_query
+
+
+def prettify_query(query: str) -> str:
+    # Prettify the query
+    # Remove any leading or trailing whitespace
+    query = query.strip()
+    # Remove any leading or trailing <Query> and </Query>
+    query = query.replace("<Query>", "").replace("</Query>", "")
+    # Remove any leading or trailing "
+    query = query.replace('"', "")
+    # Remove any leading or trailing '
+    query = query.replace("'", "")
+    # Remove any leading or trailing `
+    query = query.replace("`", "")
+    # Remove any leading or trailing .
+    query = query.replace(".", "")
+    return query
+
+
+def rag_pipeline(conversation_history: str, name: str) -> str:
     """Pipeline for RAG processing.
 
     Args:
         conversation_history (str): The conversation history to process
-
+        name (str): The name of the person to retrieve information about
     Returns:
         str: The retrieved knowledge
     """
@@ -127,11 +183,17 @@ def rag_pipeline(conversation_history: str) -> str:
     # This will reuse the existing instance if it exists
     rag_service = RAGService(working_dir)
 
-    # Example: Query with time measurement
-    answer, time_taken = rag_service.query(conversation_history, measure_time=True)
+    # Generate focused query from conversation history
+    logger.info("Generating focused query from conversation history")
+    focused_query = generate_rag_query(conversation_history, name)
+
+    # Query RAG with the focused query
+    logger.info("Querying RAG with generated query")
+    answer, time_taken = rag_service.query(focused_query, measure_time=True)
 
     logger.info("-" * 100)
     logger.info("Hybrid search")
+    logger.info(f"Query: {focused_query}")
     logger.info("-" * 100)
     logger.info(answer)
     logger.info(f"Time taken: {time_taken} seconds")
@@ -141,22 +203,20 @@ def rag_pipeline(conversation_history: str) -> str:
 
 # Example usage
 if __name__ == "__main__":
-    working_dir = os.getenv("WORKING_DIR")
-    if not working_dir:
-        raise ValueError("WORKING_DIR environment variable is not set")
+    # Test the RAG pipeline with a sample conversation
+    test_conversation = """
+    Alice (user): So, we are going to solve the problem of is it ethical to use AI to copy a digital identity. I think it is not because the digital identity is not a physical object.
+    Banghao Chi (assistant): Well, I think it is ethical to use AI to copy a digital identity, under the case that the person being copied agrees to it.
+    Charlie (user): I think you make a good point about consent. But what about the potential misuse of such technology?
+    """
 
-    rag_service = RAGService(working_dir)
+    print("\n=== Testing RAG Pipeline ===\n")
 
-    # Example: Insert a file
-    # info_path = f"{working_dir}/data/info.txt"
-    # rag_service.insert_file(info_path)
+    print("Input Conversation:")
+    print(test_conversation)
 
-    # Example: Query with time measurement
-    question = "What is the GPA of Banghao Chi in UIUC?"
-    answer, time_taken = rag_service.query(question, measure_time=True)
+    print("\nRetrieving relevant information...")
+    result = rag_pipeline(test_conversation)
 
-    logger.info("-" * 100)
-    logger.info("Hybrid search")
-    logger.info("-" * 100)
-    logger.info(answer)
-    logger.info(f"Time taken: {time_taken} seconds")
+    print("\nRetrieved Information:")
+    print(result)

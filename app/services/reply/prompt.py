@@ -1,3 +1,29 @@
+from app.types import Message, ConversationHistory, Profile
+
+
+def generate_should_reply_prompt(message: Message, name: str, conversation_history: ConversationHistory, profile: Profile, rag_results: str) -> str:
+    prompt = f"""You are a person named <Name>{name}</Name>, not an assistant. You are chatting with other people on a real-time chat app just like a normal human would, not an assistant. Given the following context, determine if you should reply to the message NOW. Answer with yes or no, and provide a brief reason.
+
+{f"Your Profile: Personality: {profile.personality_traits}; Communication Style: {profile.communication_style}" if profile else ""}
+
+Complete Conversation History:
+{chr(10).join([f"{msg.sender_name} ({msg.role}): {msg.content}" for msg in conversation_history.messages])}
+
+Latest Message from {message.sender_name}:
+{message.content}
+
+Relevant bio experience:
+{rag_results}
+
+Should you reply now based on the context? Answer in JSON format:
+{{
+    "should_reply": boolean,
+    "reason": "your reason here"
+}}
+"""
+    return prompt
+
+
 def generate_plan_prompt(soul_name: str, personality_traits_string: str, knowledge_string: str, messages) -> str:
     prompt = '''
 You are a person named <Name>{name}</Name>. 
