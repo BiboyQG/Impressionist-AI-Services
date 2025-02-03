@@ -30,14 +30,18 @@ graph TB
         N --> O[Fetch Relevant Facts]
         M --> Q[Generation Prompt after RAG]
         O --> Q
-        Q --> P[Response Generation]
+        Q --> Z{Reply Decision}
+        Z -->|Yes| P[Response Generation]
+        Z -->|No| NoReply[Return No-Reply Reason]
         P --> R[Return Response]
     end
     classDef process fill:#e1bee7,stroke:#333,stroke-width:2px,color:#000
     classDef storage fill:#bbdefb,stroke:#333,stroke-width:2px,color:#000
     classDef input fill:#c8e6c9,stroke:#333,stroke-width:2px,color:#000
     classDef output fill:#ffcdd2,stroke:#333,stroke-width:2px,color:#000
+    classDef decision fill:#fff59d,stroke:#333,stroke-width:2px,color:#000
     class B,F,M,N,P,Q,T,U,V,W,X,Y process
     class G storage
     class A,C,I,K,S input
-    class H,R output
+    class H,R,NoReply output
+    class Z decision
