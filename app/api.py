@@ -1,7 +1,53 @@
-from fastapi import APIRouter, HTTPException, Body, status
+from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse
+from app.types import Message, GenerationResponse
+from app.services.reply.generation import (
+    get_conversation_history,
+    get_profile,
+    generate_response,
+)
 
 api_router = APIRouter()
+
+
+@api_router.post("/generate", response_model=GenerationResponse)
+async def generate_message(message: Message, name: str):
+    """
+    Generate a response for a given message and assistant name
+
+    Args:
+        message: The incoming message with sender's information
+        assistant_name: Name of the AI assistant who should respond
+    """
+    try:
+        # Validate that the message is not from the assistant
+        if message.role == "assistant":
+            raise HTTPException(
+                status_code=400,
+                detail="Cannot generate response for a message from an assistant",
+            )
+
+        # Get conversation history
+        conversation_history = get_conversation_history(message)
+
+        # Get assistant profile
+        profile = get_profile(message)
+
+        # Generate response
+        response = generate_response(
+            message=message,
+            conversation_history=conversation_history,
+            profile=profile,
+            name=name,
+        )
+
+        return JSONResponse(content={"response": response})
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=500, detail=f"Error generating response: {str(e)}"
+        )
+
 
 @api_router.get("/health")
 async def health_check():
