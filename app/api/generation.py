@@ -13,7 +13,7 @@ router = APIRouter()
 
 
 @router.post("/generate", response_model=GenerationResponse)
-async def generate_message(message: Message, assistant_name: str):
+async def generate_message(message: Message, name: str):
     """
     Generate a response for a given message and assistant name
 
@@ -22,7 +22,7 @@ async def generate_message(message: Message, assistant_name: str):
         assistant_name: Name of the AI assistant who should respond
     """
     try:
-        logger.info(f"Received generation request for assistant: {assistant_name}")
+        logger.info(f"Received generation request for name: {name}")
 
         # Validate that the message is not from the assistant
         if message.role == "assistant":
@@ -42,7 +42,7 @@ async def generate_message(message: Message, assistant_name: str):
             message=message,
             conversation_history=conversation_history,
             profile=profile,
-            name=assistant_name,
+            name=name,
         )
 
         logger.info("Generation completed successfully")
