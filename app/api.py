@@ -10,7 +10,7 @@ from app.services.reply.generation import (
 api_router = APIRouter()
 
 
-@api_router.post("/generate", response_model=GenerationResponse)
+@api_router.post("/reply", response_model=GenerationResponse)
 async def generate_message(message: Message, name: str):
     """
     Generate a response for a given message and assistant name
@@ -41,7 +41,7 @@ async def generate_message(message: Message, name: str):
             name=name,
         )
 
-        return JSONResponse(content={"response": response})
+        return JSONResponse(content={"reply": response})
 
     except Exception as e:
         raise HTTPException(
