@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Body
 from fastapi.responses import JSONResponse
 from app.types import Message, GenerationResponse
 from app.services.reply.generation import (
@@ -11,7 +11,10 @@ api_router = APIRouter()
 
 
 @api_router.post("/reply", response_model=GenerationResponse)
-async def generate_message(message: Message, name: str):
+async def generate_message(
+    name: str = Body(..., embed=True),
+    # message: Message
+):
     """
     Generate a response for a given message and assistant name
 
@@ -21,11 +24,19 @@ async def generate_message(message: Message, name: str):
     """
     try:
         # Validate that the message is not from the assistant
-        if message.role == "assistant":
-            raise HTTPException(
-                status_code=400,
-                detail="Cannot generate response for a message from an assistant",
-            )
+        # if message.role == "you":
+        #     raise HTTPException(
+        #         status_code=400,
+        #         detail="Cannot generate response for a message from impressionist itself",
+        #     )
+
+        # TODO: delete this example message
+        message = Message(
+            content="I think you make a good point about consent. But what about the potential misuse of such technology?",
+            role="user",
+            sender_name="Charlie",
+            timestamp="2024-02-02T10:00:10Z",
+        )
 
         # Get conversation history
         conversation_history = get_conversation_history(message)
@@ -41,7 +52,7 @@ async def generate_message(message: Message, name: str):
             name=name,
         )
 
-        return JSONResponse(content={"reply": response})
+        return response
 
     except Exception as e:
         raise HTTPException(
